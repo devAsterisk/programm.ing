@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>PROGRAMM.ING - Introduce your website with the perfect technical domain</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Introduce your website with the perfect technical domain" />
+  <link rel="icon" href="favicon.png">
+  <link rel="stylesheet" href="./css/default.css">
+  <meta property="og:title" content="PROGRAMM.ING" />
+  <meta property="og:description" content="Introduce your website with the perfect technical domain" />
+  <meta property="og:image" content="./img/logo.png" />
+  <title>Domain Promotion</title>
+</head>
+<body>
+  <div class="container">
+    <div class="domain"> 
+      <span class="flip" id="flipText">secure</span>.programm.ing
+    </div>
+    <div class="description">
+        Introduce your website with the perfect technical domain.
+    </div>
+    <div class="button-container">
+      <a href="https://forms.gle/AGsCBNEBi4cwyoXU9" target="_blank" class="cta-button">Pre-register</a>
+    </div>
+  </div>
+  <script>
+    const words = ["creative", "ai", "cloud", "bitcoin", "crypto", "secure", "effective"];
+    let index = 0;
+    const flipTextElement = document.getElementById("flipText");
+
+    setInterval(() => {
+      index = (index + 1) % words.length;
+      flipTextElement.textContent = words[index];
+    }, 2000);
+  </script>
+</body>
+</html>
